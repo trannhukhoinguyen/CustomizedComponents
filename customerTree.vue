@@ -54,23 +54,23 @@ const treeData = customerData?.map((customer, index) => ({
     children: [
         {
             title: `${customer.email}`,
-            key: '0-0-0',
+            key: `0-${index}-0`,
         },
         {
             title: `${customer.phone}`,
-            key: '0-0-1',
+            key: `0-${index}-1`,
         },
         {
             title: `${customer.whatsapp}`,
-            key: '0-0-2',
+            key: `0-${index}-2`,
         },
         {
             title: `${customer.position}`,
-            key: '0-0-3',
+            key: `0-${index}-3`,
         },
         {
             title: `${customer.postalCode}`,
-            key: '0-0-4',
+            key: `0-${index}-4`,
         },
     ],
 }));
