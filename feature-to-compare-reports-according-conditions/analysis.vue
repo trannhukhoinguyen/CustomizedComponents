@@ -11,7 +11,7 @@
                 </template>
               </a-switch>
               <a-space v-if="!showComparisonFilters">
-                <ExtrasFilters
+                <Filters
                   :initPath="initPath"
                   :loading="loading"
                   :windowWidth="800"
@@ -31,7 +31,7 @@
                       :disabled="loading"
                     />
                   </template>
-                </ExtrasFilters>
+                </Filters>
               </a-space>
               <a-popover placement="bottom" v-if="showComparisonFilters">
                 <template #content>
@@ -74,7 +74,7 @@
                   </div>
                 </template>
                 <a-space>
-                  <ExtrasFilters
+                  <Filters
                     :initPath="initPath"
                     :loading="loading"
                     :windowWidth="800"
@@ -95,7 +95,7 @@
                         :disabled="sameService || loading"
                       />
                     </template>
-                  </ExtrasFilters>
+                  </Filters>
                   <a-button type="primary" @click="submitComparison" :disabled="count < 2 || loading">
                     <b>Compare</b>
                   </a-button>
